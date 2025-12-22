@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>LAN Object Detection</title>
+    <style>
+        body {
+            font-family: system-ui;
+            margin: 20px
+        }
+
+        img {
+            max-width: 90vw;
+            height: auto;
+            border: 1px solid #222;
+            border-radius: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Server Preview</h2>
+    <img id="prev" src="/preview.jpg" onerror="this.src='';" />
+    <pre id="det"></pre>
+    <script>
+        async function tick() {
+            try {
+                const r = await fetch('/preview.jpg?ts=' + Date.now());
+                if (r.ok) {
+                    document.getElementById('prev').src = '/preview.jpg?ts=' + Date.now();
+                }
+                const d = await fetch('/last.json?ts=' + Date.now());
+                if (d.ok) { document.getElementById('det').textContent = JSON.stringify(await d.json(), null, 2); }
+            } catch (e) { }
+            setTimeout(tick, 500);
+        }
+        tick();
+    </script>
+</body>
+
+</html>

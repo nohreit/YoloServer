@@ -1,0 +1,1 @@
+{"detections":[{"label":"keyboard","conf":0.7417,"box":[1865,1937,2998,3481]}],"latency_ms":219,"img_w":3000,"img_h":4000,"ts":1766425502.7953744,"preview_version":2,"topk":[{"label":"keyboard","conf":0.7417}]}
