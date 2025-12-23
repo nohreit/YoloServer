@@ -1,1 +1,0 @@
-{"detections":[{"label":"fork","conf":0.6388,"box":[1261,463,1785,3698]}],"latency_ms":615,"img_w":3000,"img_h":4000,"ts":1766436208.2007298,"preview_version":45,"topk":[{"label":"fork","conf":0.6388}]}
