@@ -1,1 +1,1 @@
-{"detections":[{"label":"keyboard","conf":0.7417,"box":[1865,1937,2998,3481]}],"latency_ms":219,"img_w":3000,"img_h":4000,"ts":1766425502.7953744,"preview_version":2,"topk":[{"label":"keyboard","conf":0.7417}]}
+{"detections":[{"label":"fork","conf":0.6388,"box":[1261,463,1785,3698]}],"latency_ms":615,"img_w":3000,"img_h":4000,"ts":1766436208.2007298,"preview_version":45,"topk":[{"label":"fork","conf":0.6388}]}
